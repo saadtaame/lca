@@ -6,8 +6,9 @@ Quick lowest-common-ancestor queries using sparse tables. The function `lca(x,y)
 * `void lca(int x, int y) // Lowest common ancestor of x and y`
 
 # Other uses
-This data structure can also be used to quickly answer path-queries in a (weighted) rooted tree. Examples include sum:
+This data structure can also be used to quickly answer path-queries in a (weighted) rooted tree. Examples include:
+* Find sum of weights on path from node x to node y.
 * Find min/max edge weight on path from node x to node y.
 * Find weight of path from node x to node y.
 
-The data structure can support updates by adding a function to update the sparse table. An update can be implemented in tim `O(lg N)` so both operations are fast.
+The data structure can support updates by adding a function to update the sparse table. An update can be implemented in time `O(lg N)` so both operations are fast.
